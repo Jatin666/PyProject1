@@ -1,0 +1,80 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled2.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOYXVDUq5GcKn0H4F2s2qey",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python2",
+      "display_name": "Python 2"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Jatin666/PyProject1/blob/master/GUESSING_GAME.pynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "hJ750D3L0Pr5",
+        "colab_type": "text"
+      },
+      "source": [
+        "GUESSING GAME"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "PeYe3eJ30NY6",
+        "colab_type": "code",
+        "colab": {}
+      },
+      "source": [
+        "import random\n",
+        "print(\"Number game\")\n",
+        "start=0\n",
+        "end=20\n",
+        "computernumber=random.randint(0,20)\n",
+        "while(True):\n",
+        "    usernumber= int(input(\"enter the number:\"))\n",
+        "    if usernumber == computernumber:\n",
+        "        print(\"your number is correct\")\n",
+        "        break\n",
+        "    elif usernumber > computernumber:\n",
+        "         end=computernumber\n",
+        "         midpoint=(start+end/2)\n",
+        "         print(midpoint)\n",
+        "         if(midpoint>usernumber):\n",
+        "            print(\"your number is high\")\n",
+        "         else:\n",
+        "             print(\"your number is too high\")\n",
+        "    elif usernumber<computernumber:\n",
+        "         end=usernumber\n",
+        "         midpoint=(start+end/2)\n",
+        "         print(midpoint)\n",
+        "         if(midpoint<computernumber):\n",
+        "            print(\"your number is low\")\n",
+        "         else:\n",
+        "              print(\"your number is too low\")\n",
+        "\n",
+        "    else:\n",
+        "                print(\"invalid\")\n",
+        "        \n"
+      ],
+      "execution_count": 0,
+      "outputs": []
+    }
+  ]
+}
